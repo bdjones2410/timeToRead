@@ -6,6 +6,12 @@ var readSpeed = prompt("What is your average word per minute read speed? global 
     readSpeed = 230;
     return readSpeed
   }
+  // thank you jfriend00 on stackOverFlow for showing what the value of a no input prompt equates to.
+  
+  else if (readSpeed === "") {
+    readSpeed = 230;
+    return readSpeed
+  }
   else {
     return readSpeed
   }

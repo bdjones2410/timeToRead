@@ -1,4 +1,16 @@
-var readSpeed = 230;
+//idea to make it into a prompt for the user to change credit to Max Krause
+
+var readSpeed = prompt("What is your average word per minute read speed? global average is 230");
+  function makesure() {
+  if(isNaN(readSpeed)) {
+    readSpeed = 230;
+    return readSpeed
+  }
+  else {
+    return readSpeed
+  }
+};
+makesure();
 
 function WPM(things) {
   var wordsPer = Math.round(things.length/readSpeed);
